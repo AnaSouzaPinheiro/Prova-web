@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcula salário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="salarioArea">
+        <h1>Cálculo Salário</h1>
+
+        <p class="intruction">Horas trabalhadas no mês:</p>
+        <input class="horasTrabalhas" type="text" required />
+
+        <p class="intruction">Valor da hora trabalhada (R$):</p>
+        <input class="valorHora" type="text" required />
+
+        <p class="intruction">Percentual de desconto (%):</p>
+        <input class="percent" type="text" required />
+        <br /><input type="submit" class="calcular" value="Calcular" />
+      </div>
+
+      <div class="resultado">
+        <h1>Resultados</h1>
+
+        <p class="intruction">
+          Horas trabalhadas no mês: <span class="resultHoras"> </span>
+        </p>
+        <p class="intruction">
+          Valor da hora trabalhada: R$<span class="resultValorHoras"> </span>
+        </p>
+        <p class="intruction">
+          Salário Bruto: R$<span class="resultSB"> </span>
+        </p>
+        <p class="intruction">
+          Desconto: R$<span class="resultDesconto"> </span>
+        </p>
+        <p class="intruction">
+          Salário Liquído: R$<span class="resultSL"> </span>
+        </p>
+
+        <br /><button type="button" class="novoCalculo">Novo Cálculo</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

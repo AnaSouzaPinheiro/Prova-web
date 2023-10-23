@@ -1,0 +1,115 @@
+/* ========= RESET ========= */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========= VARIABLES ========= */
+:root {
+  font-size: 15%;
+  /* fonts type */
+  --roboto-font: "Roboto", sans-serif;
+
+  /* fonts size */
+  --large-font-size: 10rem;
+  --mid-font-size: 6rem;
+
+  /* colors */
+  --bg-color: darkblue;
+  --otherBg-color: lightblue;
+  --buttoon-color: green;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--roboto-font);
+  background: var(--bg-color);
+}
+
+.salarioArea {
+  background: var(--otherBg-color);
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--bg-color);
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resultado {
+  background: var(--otherBg-color);
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--bg-color);
+  height: 400px;
+  width: 300px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: var(--large-font-size);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resultado h1 {
+  font-size: var(--large-font-size);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.calcular,
+.novoCalculo {
+  background: var(--buttoon-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: var(--mid-font-size);
+}
+
+.intruction {
+  font-size: var(--mid-font-size);
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+  font-size: var(--mid-font-size);
+  padding: 5px;
+}
+
+.hide-salarioArea {
+  display: none;
+}
